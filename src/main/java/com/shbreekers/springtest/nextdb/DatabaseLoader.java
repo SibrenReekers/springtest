@@ -8,12 +8,9 @@ import org.springframework.stereotype.Component;
 public class DatabaseLoader implements CommandLineRunner {
 
     private final AthleteRepository athleteRepository; // Voeg je AthleteRepository toe
-    private final NoteRepository noteRepository; // Voeg je NoteRepository toe
-
     @Autowired
-    public DatabaseLoader(AthleteRepository athleteRepository, NoteRepository noteRepository) {
+    public DatabaseLoader(AthleteRepository athleteRepository) {
         this.athleteRepository = athleteRepository;
-        this.noteRepository = noteRepository;
     }
 
     @Override

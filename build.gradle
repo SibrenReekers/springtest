@@ -30,4 +30,7 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+springBoot {
+	mainClass = 'com.shbreekers.springtest.nextdb.ReactAndSpringDataRestApp'
+}
 

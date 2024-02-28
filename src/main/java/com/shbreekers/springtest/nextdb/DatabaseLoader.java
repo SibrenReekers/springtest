@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class DatabaseLoader implements CommandLineRunner {
 
-    private final AthleteRepository athleteRepository;
+    private final AthleteRepository athleteRepository; // Voeg je AthleteRepository toe
     private final NoteRepository noteRepository; // Voeg je NoteRepository toe
 
     @Autowired
